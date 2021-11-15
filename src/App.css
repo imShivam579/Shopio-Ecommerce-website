@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /* -------------------Typography---------------------- */
+  --font-style1-primaryfont: Roboto;
+  --heading-h1: 50px;
+  --heading-h2: 40px;
+  --heading-h3: 30px;
+  --text-large: 25px;
+  --text-regular: 18px;
+  --text-medium: 18px;
+  --text-small: 15px;
+  --text-extrasmall: 9px;
+  --headingh1-fontweight: 500;
+  --headingh2-fontweight: 500;
+  --headingh3-fontweight: 500;
+  --textLarge-fontweight: 400;
+  --textMedium-fontweight: 400;
+  --textSmall-fontweight: 200;
+  --textExtraSmall-fontweight: 300;
+  --headingh1-lineheight: 58px;
+  --headingh2-lineheight: 45px;
+  --headingh3-lineheight: 35px;
+  --textLarge-lineheight: 28px;
+  --textMedium-lineheight: 25px;
+  --textSmall-lineheight: 17px;
+  --textExtraSmall-lineheight: 10px;
+  /* -------------------Color's---------------------- */
+  --white-100-primaryWhite: #fff;
+  --white-200: #f6f7fb;
+  --white-300: #f4f7fe;
+  --black-900-primaryBlack: #1a1c1b;
+  --black-600: #6e706f;
+  --black-500: #8e8e8e;
+  --moody-blue: #070920;
+  --gloy-star-yellow: #f7ba00;
+  --gloy-yellow-border: #f7ba00;
+  --grey-900: #1b2559;
+  --grey-800: #2d396b;
+  --grey-700: #485585;
+  --grey-600: #68769f;
+  --grey-500: #8f9bba;
+  --grey-400: #b0bbd5;
+  --grey-300: #c9d4ea;
+  --grey-200: #c9d4ea;
+  --grey-100: #eff4fb;
+  /* -------------------Gradient---------------------- */
+  --GradientOverlay-style1: linear-gradient(
+    96.46deg,
+    #a0a0a0 4.51%,
+    #c8c8c8 28.77%,
+    #cacaca 61.54%,
+    #eeeeee 92.24%
+  );
+  --GradientOverlay-style2: linear-gradient(
+    93.24deg,
+    rgba(31, 28, 28, 0.5) 4.18%,
+    rgba(31, 28, 28, 0.35) 34.65%,
+    rgba(26, 25, 25, 0.05) 78.6%,
+    rgba(141, 141, 141, 0.09) 96.08%
+  );
+  /* -------------------Box-shadow---------------------- */
+  --Soft-shadow-style1: 0px 10px 12px rgba(112, 144, 176, 0.08);
+  --Default-shadow-style2: 0px 6px 10px rgba(112, 144, 176, 0.12);
+  --Sharp-shadow-style3: 0px 8px 12px rgba(40, 41, 41, 0.25);
+  --CTA-button-shadow-style4: 0px 12px 16px rgba(29, 40, 97, 0.6);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
