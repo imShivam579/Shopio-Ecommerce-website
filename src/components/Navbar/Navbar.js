@@ -10,12 +10,7 @@ function Navbar() {
             <img src={Logo} alt="logo" />
           </div>
           <div className="searchbar-wrapper">
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Search products & brands.."
-            />
+            <input type="text" placeholder="Search products & brands.." />
             <button type="submit">
               <i class="fal fa-search"></i>
             </button>
@@ -24,7 +19,7 @@ function Navbar() {
             <ul>
               <li>
                 <a href="#" id="user-log">
-                  <i class="fal fa-user-alt"></i>Sign Up\ Login
+                  <i class="fal fa-user-alt"></i>Sign Up\Login
                 </a>
               </li>
               <li>

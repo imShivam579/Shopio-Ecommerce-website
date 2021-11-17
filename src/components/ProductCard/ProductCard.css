@@ -1,0 +1,18 @@
+.product-card {
+  max-width: 250px;
+  background: yellowgreen;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+}
+.product-card .image-wrapper {
+  background: linear-gradient(96.46deg, #a0a0a0 4.51%, #cacaca 97.67%);
+  height: 30%;
+}
+.image-wrapper img {
+  width: fit-content;
+}
