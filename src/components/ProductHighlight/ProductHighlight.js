@@ -1,19 +1,49 @@
 import React from "react";
-
+import "./ProductHighlight.css";
 function ProductHighlight() {
   return (
     <>
-      <div className="title">
-        <h1>Product Highlight Component</h1>
+      <div className="highlight-carousel ">
+        <button className="carousel__button carousel__button--left">
+          <i class="far fa-chevron-left"></i>
+        </button>
+        <div className="carousel__track-container">
+          <ul className="carousel__track ">
+            <li className="carousel__slide">
+              <img
+                className="carousel__image "
+                src="./images/productHighlight-1.png"
+                alt=""
+                srcset=""
+              />
+            </li>
+            <li className="carousel__slide">
+              <img
+                className="carousel__image"
+                src="./images/productHighlight-1.png"
+                alt=""
+                srcset=""
+              />
+            </li>
+            <li className="carousel__slide">
+              <img
+                className="carousel__image"
+                src="./images/productHighlight-1.png"
+                alt=""
+                srcset=""
+              />
+            </li>
+          </ul>
+        </div>
+        <div className="carousel__nav">
+          <button className="carousel__indicator current-slide"></button>
+          <button className="carousel__indicator"></button>
+          <button className="carousel__indicator"></button>
+        </div>
+        <button className="carousel__button carousel__button--right">
+          <i class="far fa-chevron-right"></i>
+        </button>
       </div>
-      <div className="Heading-h1">Heading h1</div>
-      <div className="Heading-h2">Heading h2</div>
-      <div className="Heading-h3">Heading h3</div>
-      <div className="Text-large">Text large</div>
-      <div className="Text-regular">Text regular</div>
-      <div className="Text-medium">Text medium</div>
-      <div className="Text-small">Text small</div>
-      <div className="Text-extraSmall">Text Extrasmall</div>
     </>
   );
 }

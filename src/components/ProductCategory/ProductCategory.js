@@ -1,0 +1,43 @@
+import React from "react";
+import "./ProductCategory.css";
+import ProductCard from "../ProductCard";
+function ProductCategory(category) {
+  const { Category_title, Category_product } = category;
+
+  return (
+    <div className="productCategory-container">
+      <div className="productCategory-wrapper">
+        <div className="category-title Heading-h3">{Category_title}</div>
+        <div className="category-wrapper">
+          {Category_product.map((product) => {
+            return <ProductCard {...product} />;
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+export function DailyDealsCategory(category) {
+  const { Category_title, Category_product } = category;
+  return (
+    <>
+      <div className="productCategory-container DailyDeal-container">
+        <div className="DailyDeal-wrapper">
+          <div className="category-textWrapper">
+            <div className="category-title Heading-h1">{Category_title}</div>
+            <div className="category-timer Heading-h3">08 : 32 : 29</div>
+          </div>
+
+          <div className="productCategory-wrapper">
+            <div className="category-wrapper">
+              {Category_product.map((product) => {
+                return <ProductCard {...product} />;
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+export default ProductCategory;

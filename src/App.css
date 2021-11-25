@@ -7,13 +7,12 @@
   --heading-h2: 40px;
   --heading-h3: 30px;
   --text-large: 25px;
-  --text-regular: 18px;
   --text-medium: 18px;
   --text-small: 15px;
   --text-extrasmall: 9px;
   --headingh1-fontweight: 500;
-  --headingh2-fontweight: 500;
-  --headingh3-fontweight: 500;
+  --headingh2-fontweight: 600;
+  --headingh3-fontweight: 600;
   --textLarge-fontweight: 400;
   --textMedium-fontweight: 400;
   --textSmall-fontweight: 200;
@@ -41,7 +40,7 @@
   --grey-600: #68769f;
   --grey-500: #8f9bba;
   --grey-400: #b0bbd5;
-  --grey-300: #c9d4ea;
+  --grey-300: #f4f7fe;
   --grey-200: #c9d4ea;
   --grey-100: #eff4fb;
   /* -------------------Gradient---------------------- */
@@ -69,4 +68,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-style1-primaryfont), sans-serif;
+}
+#root {
+  background-color: var(--grey-300);
+}
+.Heading-h1 {
+  font-size: var(--heading-h1);
+  font-weight: var(--headingh1-fontweight);
+  line-height: var(--headingh1-lineheight);
+}
+.Heading-h2 {
+  font-size: var(--heading-h2);
+  font-weight: var(--headingh2-fontweight);
+  line-height: var(--headingh2-lineheight);
+}
+.Heading-h3 {
+  font-size: var(--heading-h3);
+  font-weight: var(--headingh3-fontweight);
+  line-height: var(--headingh3-lineheight);
+}
+.Text-large {
+  font-size: var(--text-large);
+  font-weight: var(--textLarge-fontweight);
+  line-height: var(--textLarge-lineheight);
+}
+.Text-medium {
+  font-size: var(--text-medium);
+  font-weight: var(--textMedium-fontweight);
+  line-height: var(--textMedium-lineheight);
+}
+.Text-small {
+  font-size: var(--text-small);
+  font-weight: var(--textSmall-fontweight);
+  line-height: var(--textSmall-lineheight);
+}
+.Text-extraSmall {
+  font-size: var(--text-extrasmall);
+  font-weight: var(--textExtraSmall-fontweight);
+  line-height: var(--textExtraSmall-lineheight);
+}
+
+@media screen and (max-width: 1199px) {
+  .Heading-h1 {
+    font-size: var(--heading-h2);
+    font-weight: var(--headingh2-fontweight);
+    line-height: var(--headingh2-lineheight);
+  }
+  .Heading-h2 {
+    font-size: var(--heading-h3);
+    font-weight: var(--headingh3-fontweight);
+    line-height: var(--headingh3-lineheight);
+  }
+  .Heading-h3 {
+    --textLarge-fontweight: 500;
+    font-size: var(--text-large);
+    font-weight: var(--textLarge-fontweight);
+    line-height: var(--textLarge-lineheight);
+  }
+  .Text-large {
+    --textMedium-fontweight: 400;
+    font-size: var(--text-medium);
+    font-weight: var(--textMedium-fontweight);
+    line-height: var(--textMedium-lineheight);
+  }
+  .Text-medium {
+    font-size: var(--text-small);
+    font-weight: var(--textSmall-fontweight);
+    line-height: var(--textSmall-lineheight);
+  }
+  .Text-small {
+    font-size: var(--text-extrasmall);
+    font-weight: var(--textExtraSmall-fontweight);
+    line-height: var(--textExtraSmall-lineheight);
+  }
+}
+
+.wrapper {
+  width: min(85vw, 90vw);
+  /* background: lightcoral; */
+}
+
+.section {
+  width: 100%;
+  max-width: 100vw;
+  /* background: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
