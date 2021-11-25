@@ -1,21 +1,24 @@
 import React from "react";
 import "./ProductCard.css";
-import cardImg from "../../images/ProductCard-img1.png";
-function index() {
+function index(product) {
   return (
     <div className="product-card">
-      <div className="card-image image-wrapper">
-        <img src={cardImg} alt="product-img" />
+      <div className="img-wrapper">
+        <img src={product.Product_image_URL} />
       </div>
       <div className="card-details">
-        <div className="product-title Text-large">Product Title</div>
-        <div className="product-detail Text-medium">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <div className="card-text-wrapper">
+          <div className="product-title Text-medium">
+            {product.Product_title}
+          </div>
         </div>
         <div className="product-review">
           <div className="product-rating">⭐⭐⭐⭐</div>
-          <div className="product-price">$120</div>
+          <div className="product-price">$ {product.Product_price}</div>
         </div>
+        <button>
+          <i class="fal fa-cart-plus"></i>
+        </button>
       </div>
     </div>
   );

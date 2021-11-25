@@ -1,12 +1,74 @@
 .productCategory-container {
-  /* width: 100vw; */
-  /* max-width: 100%; */
-  /* height: 200px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 1rem;
+  background-color: transparent;
 }
 .category-wrapper {
+  width: min(90vw, 90vw);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  background-color: transparent;
+}
+.category-title {
+  margin: 1rem auto;
+  color: var(--grey-800);
+}
+@media screen and (max-width: 991px) {
+  .category-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .category-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 575px) {
+  .category-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.DailyDeal-container {
+  background-color: var(--moody-blue);
+  padding: 2rem 0;
+}
+.DailyDeal-wrapper {
   display: flex;
-  align-items: center;
+  width: min(90vw, 90vw);
+  flex-wrap: wrap;
   justify-content: space-between;
-  /* background-color: lightseagreen; */
+  /* background-color: lightblue; */
+}
+.DailyDeal-container .productCategory-wrapper {
+  width: 70%;
+}
+.DailyDeal-container .category-wrapper {
+  /* display: flex; */
+  width: fit-content;
+  /* background-color: rgb(101, 114, 119); */
+  grid-template-columns: repeat(3, 1fr);
+}
+.DailyDeal-container .category-textWrapper {
+  /* background: lightgreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.2rem;
+}
+.category-timer {
+  color: var(--white-200);
+  margin-top: 1.5rem;
+}
+.DailyDeal-container .category-title {
+  color: var(--white-200);
+  width: 205px;
+  /* background: lightcoral; */
+  margin: 0;
 }

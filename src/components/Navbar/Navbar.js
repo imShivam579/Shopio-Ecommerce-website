@@ -1,16 +1,21 @@
 import React from "react";
 import "./navbar.css";
-import Logo from "../../images/logo.png";
 function Navbar() {
   return (
     <>
       <header id="header">
         <div className="header-wrapper">
           <div className="logo-wrapper">
-            <img src={Logo} alt="logo" />
+            <img src="./images/logo.png" alt="logo" className="brand-logo" />
           </div>
-          <div className="searchbar-wrapper">
-            <input type="text" placeholder="Search products & brands.." />
+          <div className="searchbar-wrapper" id="searchbarWrapper">
+            <input
+              className="Text-medium"
+              id="inputBox"
+              type="text"
+              placeholder="Search products & brands.."
+              onClick={() => activeBorder()}
+            />
             <button type="submit">
               <i class="fal fa-search"></i>
             </button>
@@ -18,7 +23,7 @@ function Navbar() {
           <div className="nav-menu-wrapper">
             <ul>
               <li>
-                <a href="#" id="user-log">
+                <a href="#" id="user-log" className="Text-medium">
                   <i class="fal fa-user-alt"></i>Sign Up\Login
                 </a>
               </li>
@@ -38,6 +43,10 @@ function Navbar() {
       </header>
     </>
   );
+  function activeBorder() {
+    let element = document.getElementById("searchbarWrapper");
+    element.classList.add("active");
+  }
 }
 
 export default Navbar;
