@@ -1,0 +1,273 @@
+[
+  {
+    "Category_title": "Popular Products",
+    "Category_product": [
+      {
+        "id": "1",
+        "Product_title": "pTron Quinto 5W Wireless Bluetooth 5.0 Speaker with Dynamic Sound, 6Hrs Playtime, Mini Outdoor Speaker with 3.5mm Aux/Micro SD/USB Drive Slots, Built-in Mic, Full Music & Call Controls (Black)",
+        "Product_detail": [
+          "Enjoy impressively full sound quality and robust bass realized through a 5Watt dynamic driver with almost zero harmonic distortion.",
+          "Mini Wireless Bluetooth v5.0 outdoor speaker supports hands-free call function with a built-in high-sensitivity mic for clear calls.",
+          "Capable of churning out 6 hours of music playtime, support 3.5mm AUX audio input and provide you with computer speaker function. It also supports plug & play - Play by TF card & Play by USB drive.",
+          "Fast Pairing & Seamless 10M Wireless Connectivity; 52mm Driver Size; ≥95dB SNR; ≤5% Distortion; Large 1200mAh Rechargeable Battery; DC5V/500mA, Micro USB Charging; Integrated Music & Call Controls",
+          "1-year manufacturer warranty from the date of purchase, please contact our customer care team on 040-67138888/support@ptron.in"
+        ],
+        "Product_price": 749,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-PopularProduct-BluetoothSpeaker.png",
+        "detail_URL": "https://www.amazon.in/Quinto-Wireless-Bluetooth-Playtime-Controls/dp/B09DJD1BHF/ref=sr_1_19?keywords=speaker&qid=1637577470&qsid=262-7338197-9711232&smid=A14CZOWI0VEHLG&sr=8-19&sres=B072PQRS12%2CB07YNV41FT%2CB07NC12T2R%2CB07NBZ8711%2CB07NBWT3Z2%2CB07YNTJ8ZM%2CB0814ZY6FP%2CB094RCC4L1%2CB07NQNB1QC%2CB07ZZBYWKF%2CB08JMF7RF2%2CB01N9E623W%2CB08PGYLCQB%2CB08JMC1988%2CB09DJD1BHF%2CB09JJPX7MB&srpt=SPEAKERS&th=1"
+      },
+      {
+        "id": "2",
+        "Product_title": "Apple iMac with Retina 5K Display (27-inch/68.58 cm, 8GB RAM, 3.1GHz 6-core 10th-Generation Intel Core i5 Processor, 256GB SSD Storage) - Silver",
+        "Product_detail": [
+          "Apple-designed M1 chip for a giant leap in CPU, GPU, and machine learning performance",
+          "Get more done with up to 20 hours of battery life, the longest ever in a Mac",
+          "8-core CPU delivers up to 2.8x faster performance to fly through workflows quicker than ever",
+          "8-core GPU with up to 5x faster graphics for graphics-intensive apps and games",
+          "16-core Neural Engine for advanced machine learning",
+          "8GB of unified memory so everything you do is fast and fluid",
+          "Superfast SSD storage launches apps and opens files in an instant",
+          "Active cooling system sustains incredible performance",
+          "33.78cm (13.3-inch) Retina display with 500 nits of brightness for vibrant colors and incredible image detail",
+          "FaceTime HD camera with advanced image signal processor for clearer, sharper video calls"
+        ],
+        "Product_price": 150000,
+        "Product_rating": 4.5,
+        "Product_image_URL": "./images/ProductCategory-PopularProduct-AppleiMac.png",
+        "detail_URL": "amazon.in/Apple-Display-27-inch-10th-Generation-Processor/dp/B08FBJNXQF/ref=sr_1_1?keywords=apple+desktop&qid=1637576406&qsid=262-7338197-9711232&sr=8-1&sres=B08FBJNXQF%2CB0946J6X11%2CB0978SSYG1%2CB09GKGMZVR%2CB095348ZMH%2CB079QHH12B%2CB08PFVSYLM%2CB08RRM8FM7%2CB08TVQZL2C%2CB099FHZXP9%2CB008IFXQFU%2CB0836ZRQ9H%2CB08LHTJTBB%2CB09F3LF5Z7%2CB01J0XWYKQ%2CB09FPNPZB3&srpt=PERSONAL_COMPUTER"
+      },
+      {
+        "id": "3",
+        "Product_title": "Zixer Men's Korean Style High Top Platform Fashion Sneakers/Sports/Casual Shoes for Men || Ankle Casual Shoes for Men Latest",
+        "Product_detail": [
+          "Sole: Rubber",
+          "Closure: Lace-Up",
+          "Shoe Width: Medium",
+          "GOOD QUALITY PRODUCT IN DECENT PRICE: We Are Not Offering Cheap Price Shoes. We Believe In Quality So We Are Offering You A Good Quality Shoe In Decent Price. Upper Is Made Of Imported Synthetic Leather And Sole Is Made Of Flexible Air Mix.",
+          "LIGHTWEIGHT AND BREATHABLE: Sweat-absorbing Upper, Stretchy Air Mix Rubber Outsole Offer Lightweight, Breathability And Shock Absorption, Bringing You A Dry And Cool Life.",
+          "ANTI-COLLISION AND SHOCKPROOF: Reinforced Heel Counter Helps Keep The Feet Stable And Protect From Damages While You Move, Provide Great Support Effect For The Feet. Rubber Damping Sole In Net Shape Provides You With Strong Ground Holding In Accordance With The Sole Force Position And Supports Your Weight."
+        ],
+        "Product_price": 699,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-PopularProduct-KoreanStyleFashionSneakers.png",
+        "detail_URL": "https://www.amazon.in/Zixer-Korean-Platform-Fashion-Sneakers/dp/B09B5XDPYP/ref=sr_1_8?keywords=sneakers+for+men&qid=1637577735&qsid=262-7338197-9711232&sr=8-8&sres=B077N7DDL1%2CB089QKNCVR%2CB07PTBCC99%2CB09B5XDPYP%2CB07GJNY3P3%2CB097GYW2GD%2CB08W9SH7VX%2CB08TH9XZT4%2CB098B4QSZL%2CB09DGG226P%2CB09HMVFFQW%2CB099QSB4GG%2CB093KF8D76%2CB0936Z9YHH%2CB09BZTR1G5%2CB09LSH5VQK%2CB08CL1CF3K%2CB08D7TD728%2CB0857QJGKM%2CB08QFVZ82V&srpt=SHOES"
+      },
+      {
+        "id": "4",
+        "Product_title": "Citizen Eco-Drive Perpetual Calendar Men's Watch - BL8140-80L",
+        "Product_detail": [
+          "Dial Color: Blue, Case Shape: Round, Dial Glass Material: Sapphire",
+          "Band Color: Silver, Band Material: Stainless Steel",
+          "Watch Movement Type: Light Powered, Watch Display Type: Analog",
+          "Case Material: Stainless Steel, Case Diameter: 41.4 millimeters",
+          "Water Resistance Depth: 100 meters",
+          "3 years domestic warranty"
+        ],
+        "Product_price": 30515,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-PopularProduct-CalendarMensWatch.png",
+        "detail_URL": "https://www.amazon.in/Citizen-Analog-Blue-Dial-Watch-BL8140-80L/dp/B01MQE9J55/ref=sr_1_4_sspa?crid=1TGZVOFLVSSZ8&keywords=mechanical+watch+for+men&qid=1637821735&s=watches&sprefix=mechanical%2Cwatches%2C357&sr=1-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE1UENFS01PMzNKWlQmZW5jcnlwdGVkSWQ9QTA5MTI0NTNNWllKUkpGTVlYM0MmZW5jcnlwdGVkQWRJZD1BMDQzMjE0NzJLWE0xT1g3SEQxSFAmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
+      }
+    ]
+  },
+  {
+    "Category_title": "Featured Products",
+    "Category_product": [
+      {
+        "id": "1",
+        "Product_title": "Infinity (JBL) Glide 510, 72 Hrs Playtime with Quick Charge, Wireless On Ear Headphone with Mic, Deep Bass, Dual Equalizer, Bluetooth 5.0 with Voice Assistant Support (Black)",
+        "Product_detail": [
+          "72 Hours Playtime Under Optimum Audio Settings",
+          "Dual Equalizer Modes for Normal & Deep Bass Output. Driver Sensitivity (1KHz / 1mW) 102±3dB. Audio Specifications: Impedence(ohms) 32 ohms",
+          "Deep Bass Output with 36mm Drivers",
+          "Quick Charging (10 minutes of charge gives 2 Hours of playtime)",
+          "Hands-free calling with 3 Button Remote",
+          "Comfort Cushions",
+          "Voice Assistant Integration",
+          "Light weight and flat foldable"
+        ],
+        "Product_price": 1699,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-FeaturedProduct-wirelessHeadphone.png",
+        "detail_URL": "https://www.amazon.in/Infinity-Glide-510-Headphone-Equalizer/dp/B0873L7J6X/ref=sr_1_1_sspa?keywords=headphones&qid=1637578190&smid=A14CZOWI0VEHLG&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFXT0pCOEU0RVJGT1ImZW5jcnlwdGVkSWQ9QTA2Mzk1NjgyT1lZQ04zWVZPWjY1JmVuY3J5cHRlZEFkSWQ9QTA5MTIwMTkzVU8zV0RXTzhLRUImd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1"
+      },
+      {
+        "id": "2",
+        "Product_title": "boAt Rockerz 450 Wireless Bluetooth Headphone with Up to 15H Playback, Adaptive Lightweight Design, Immersive Audio, Easy Access Controls and Dual Mode Compatibility(Luscious Black)",
+        "Product_detail": [
+          "Its 40mm dynamic drivers help pump out immersive HD audio all day long",
+          "It provides a massive battery backup of upto 15 hours for a superior playback time.",
+          "It has been ergonomically designed and structured as an on-ear headphone to provide the best user experience with its comfortable padded earcushions and lightweight design",
+          "You can control your music without hiccups using the easy access controls, communicate seamlessly using the built-in mic, access voice assistant and always stay in the zone",
+          "Tap into instant wireless connectivity with optimum Bluetooth V4.2 connectivity",
+          "One can connect to boAt Rockerz 450 via not one but two modes, Bluetooth as well as AUX"
+        ],
+        "Product_price": 1299,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-FeaturedProduct-boatWirelessBluetoothHeadphone.png",
+        "detail_URL": "https://www.amazon.in/Rockerz-450-Wireless-Bluetooth-Headphone/dp/B07PR1CL3S/ref=sr_1_4?keywords=headphones&qid=1637578190&qsid=262-7338197-9711232&sr=8-4&sres=B074ZF7PVZ%2CB07PR1CL3S%2CB071Z8M4KX%2CB00KGZZ824%2CB01DEWVZ2C%2CB0856HY85J%2CB07L8JTZ4H%2CB0856HNMR7%2CB07JQKR35P%2CB07MZQ5F8S%2CB07T9FV9YP%2CB08FY4FG5X%2CB09B5CPV71%2CB08SFFP19B%2CB08SFFS6CK%2CB09K6CT273&srpt=HEADPHONES&th=1"
+      },
+      {
+        "id": "3",
+        "Product_title": "Jabra Elite 7 Active in-Ear Bluetooth Earbuds - True Wireless Sports Ear Buds with Jabra ShakeGrip for The Ultimate Active fit and Adjustable Active Noise Cancellation - Navy",
+        "Product_detail": [
+          "Durable earphones and optimal fit: With Jabra ShakeGrip technology, each bud stays in your ear even during intense workouts - IP57 rated water and sweatproof",
+          "Intelligent noise control: Choose your preferred levels of immersion or awareness for your workout with adjustable ANC and HearThrough technology - only hear what you want to hear",
+          "Maximum performance: Personalisation options and 6 mm speakers for a powerful sound - use just one bud with Mono Mode - each offers up to 8 hours battery and 30 hrs with the case",
+          "More flexibility and comfort: With Voice Assistants on tap ask Alexa or Google Assistant during your workout by simply tapping your bud - with an excellent fit in a minimalist, ultra-compact design",
+          "In the box: 1x Jabra Elite 7 Active In-Ear Bluetooth Earbuds, Charging Case, EarGels in 3 sizes, USB-C Cable, Earbud weight: 5.5g, Colour: Black. All in frustration-free packaging.Product comes with a 2-year warranty - registration required"
+        ],
+        "Product_price": 14999,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-FeaturedProduct-inAirBluetoothEarBud.png",
+        "detail_URL": "https://www.amazon.in/dp/B09FJJ2JXC/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=0d7d7b031abe37ad930bc1064c70fce7&hsa_cr_id=8201888830902&pd_rd_plhdr=t&pd_rd_r=9dfa1621-3eff-4a98-8f37-856c1b9c14d7&pd_rd_w=qkP4w&pd_rd_wg=e5EYe&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img"
+      },
+      {
+        "id": "4",
+        "Product_title": "Home Centre Polyester Emily Fabric 3 Seater Sofa (Beige)",
+        "Product_detail": [
+          "Product Dimensions: Length (184 cm), Width (92 cm), Height (88 cm)",
+          "Primary Material: Fabric, Upholstery Material: Polyester",
+          "Warranty: 1 year on product",
+          "Seating Capacity: Three seat",
+          "Assembly Required: The product requires carpenter assembly and will be provided by the seller",
+          "Style: Contemporary, seat filling : Foam"
+        ],
+        "Product_price": 18880,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-FeaturedProduct-FabricSeatSofa.png",
+        "detail_URL": "https://www.amazon.in/Home-Centre-Emily-Fabric-Seater/dp/B07THTWXX2/ref=sr_1_27?keywords=sofa&qid=1637578596&qsid=262-7338197-9711232&sr=8-27&sres=B079KCDL4T%2CB07R6YW1X1%2CB07TC3PJSR%2CB08THDXSQD%2CB09K7D5WCF%2CB09GP9QYLZ%2CB09L8CYLJJ%2CB091MYTXGT%2CB09KPRBVY8%2CB09LSBQCW5%2CB09L63W2CP%2CB09LS5BPL5%2CB09JGCTPMQ%2CB09KRWXLNF%2CB09M6YTVDM%2CB09M85LSPZ%2CB09M6YWTQY%2CB097PHYFHQ%2CB07THTWXX2%2CB09M6PR8FM&srpt=SOFA&th=1"
+      }
+    ]
+  },
+  {
+    "Category_title": "Latest Products",
+    "Category_product": [
+      {
+        "id": "1",
+        "Product_title": "Solimo Nigella Fabric 3 Seater Sofa (Grey & Black)",
+        "Product_detail": [
+          " Comfortable 3 seater sofa made with high quality fabric",
+          "Dimensions:- Length: 185 cm (72.83 in); Width: 76 cm (29.92 in); Height: 76 cm (29.92 in)",
+          "Fabric does not lose colour with rubbing; surpassed 30+ tests to ensure quality",
+          "Durability tested with 100 kg on each seat and backrest for 25,000 cycles",
+          "Meets Indian Standards IS 12674/ IS 5416 and European Safety Requirement Standard EN 12520 for performance and safety",
+          "Safe for family use; free from toxins and harmful chemicals like Azo dye and formaldehyde",
+          "Lightweight with good ground clearance for easy shifting and tidying up"
+        ],
+        "Product_price": 13699,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-LatestProduct-Fabric3SeaterSofa.png",
+        "detail_URL": "https://www.amazon.in/Amazon-Brand-Solimo-Nigella-Fabric/dp/B08HDPSJPR/ref=sr_1_32?keywords=sofa&qid=1637578596&qsid=262-7338197-9711232&sr=8-32&sres=B079KCDL4T%2CB07R6YW1X1%2CB07TC3PJSR%2CB08THDXSQD%2CB09K7D5WCF%2CB09GP9QYLZ%2CB09L8CYLJJ%2CB091MYTXGT%2CB09KPRBVY8%2CB09LSBQCW5%2CB09L63W2CP%2CB09LS5BPL5%2CB09JGCTPMQ%2CB09KRWXLNF%2CB09M6YTVDM%2CB09M85LSPZ%2CB09M6YWTQY%2CB097PHYFHQ%2CB07THTWXX2%2CB09M6PR8FM&srpt=SOFA&th=1"
+      },
+      {
+        "id": "2",
+        "Product_title": "Canon EOS M50 24.1MP Mirrorless Camera (Black) with EF-M 15-45 is STM Lens",
+        "Product_detail": [
+          "Sensor: APS-C CMOS sensor with 24.1 MP (high resolution for large prints and image cropping)",
+          "ISO: 100-25600  sensitivity range (critical for obtaining grain-free pictures, especially in low light)",
+          "Image Processor: DIGIC 8 with 143 autofocus points (important for speed and accuracy of autofocus and burst photography)",
+          "Video Resolution: 4K video with fully manual control and selectable frame rates (excellent for precision and high-quality video work)",
+          "Connectivity: WiFi, NFC and Bluetooth built-in (useful for remotely controlling your camera and transferring pictures wirelessly as you shoot)",
+          "Lens Mount: Canon EF-M mount"
+        ],
+        "Product_price": 124301,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-LatestProduct-CannonCamera.png",
+        "detail_URL": "https://www.amazon.in/Canon-24-1MP-Mirrorless-Digital-Camera/dp/B079Y45KTJ/ref=sxin_13_trr_1389175031_0?cv_ct_cx=camera&keywords=camera&pd_rd_i=B079Y45KTJ&pd_rd_r=60888df9-bce7-4a65-8e3b-279af22075ec&pd_rd_w=jTdgP&pd_rd_wg=NUYoO&pf_rd_p=5b02884a-fa70-4dad-a269-110958304970&pf_rd_r=Z8QRG50H973GAHTAJFNX&qid=1637579224&sr=1-1-439ac954-ad46-4ba0-bd86-480f8aab80ed&th=1"
+      },
+      {
+        "id": "3",
+        "Product_title": "Fire-Boltt INVINCIBLE 1.39 AMOLED 454x454 Bluetooth Calling Smartwatch ALWAYS ON, 100 Sports Modes, 100 Inbuilt Watch Faces & 8GB for 1500+ Songs, Play Music Without Phone on TWS, Spo2 & Heart Tracking",
+        "Product_detail": [
+          "✅ 1.39” AMOLED DISPLAY : Fire-Boltt Invincible has a premium 454*454 Pixel Resolution with 2.5D Full Lamination. It has an ALWAYS ON Display",
+          "✅ How to activate Bluetooth Calling : To enable Bluetooth Calling Function, first connect it to the compatible app. Once connected, manually go to the phone's Bluetooth settings and pair (Bluetooth Name: BSW020). On pairing, you will get a notification: Connected for call",
+          "✅ 100 SPORTS MODES : Fire-Boltt Invincible has 100 sports modes",
+          "✅ 100 INBUILT WATCH FACES : Fire-Boltt Invincible has 100 Inbuilt watch faces PLUS 200 cloud based watch faces",
+          "✅ TWS PAIRING : Connect Earpods For Calling and listen to music on the go.",
+          "✅ 8GB STORAGE to PLAY & SAVE LOCAL MUSIC : With 8GB Memory Storage Enjoy 1500+ Songs on the Watch",
+          "✅ SpO2, 24*7 HEART RATE : Track Spo2, Heart Rate, Blood Pressure, Sleep and Meditative Breathing all in one place",
+          "✅ BATTERY : Screen Always On Time is 1-2 days, Pure BT Calling usage time 8-10 hours, Pure local music or phone mode music is 6-8 hours, normal use 7 days, Stand By 15 Days"
+        ],
+        "Product_price": 7498,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-LatestProduct-BluetoothSmartWatch.png",
+        "detail_URL": "https://www.amazon.in/dp/B09F6QNRSP/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=677b7fa149397dc4c4bcaacd5163c08d&hsa_cr_id=1589901430402&pd_rd_plhdr=t&pd_rd_r=5ee7152f-bc7c-4021-8514-ab0f6da71536&pd_rd_w=5cuPz&pd_rd_wg=54BFS&ref_=sbx_be_s_sparkle_lsi4d_asin_0_title&th=1"
+      },
+      {
+        "id": "4",
+        "Product_title": "2020 Apple iPad Air with A14 Bionic chip (10.9-inch/27.69 cm, Wi-Fi, 64GB) - Space Grey (4th Generation)",
+        "Product_detail": [
+          " Stunning 27.69 cm (10.9-inch) Liquid Retina display with True Tone and P3 wide colour",
+          "A14 Bionic chip with Neural Engine",
+          "Touch ID for secure authentication",
+          "12MP back camera, 7MP FaceTime HD front camera",
+          "Available in Silver, Space Grey, Rose Gold, Green and Sky Blue",
+          "Wide stereo audio",
+          "Wi-Fi 6 (802.11ax)"
+        ],
+        "Product_price": 50990,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-LatestProduct-AppleiPad.png",
+        "detail_URL": "https://www.amazon.in/Apple-iPad-Air-10-9-inch-Wi-Fi-64GB/dp/B08J6YZZ14/ref=sr_1_1_sspa?keywords=ipad&qid=1637579514&s=computers&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFRSUhJTzFHMDFSNiZlbmNyeXB0ZWRJZD1BMDY3OTc4N1hEVFIxTEJPTVNFTiZlbmNyeXB0ZWRBZElkPUEwMzgwODgzMTY3M09aVzlURTczMSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
+      }
+    ]
+  },
+  {
+    "Category_title": "Deals of the Day",
+    "Category_product": [
+      {
+        "id": "1",
+        "Product_title": "Apple iPhone XR (64GB) - White",
+        "Product_detail": [
+          "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+          "Water and dust resistant (1 meter for up to 30 minutes, IP67)",
+          "Single 12MP Wide camera with Portrait mode, Portrait Lighting, Depth Control, Smart HDR, and 4K video up to 60fps",
+          "7MP TrueDepth front camera system with Portrait mode, Portrait Lighting, Depth Control, and 1080p video",
+          "Face ID for secure authentication",
+          "A12 Bionic with second-generation Neural Engine",
+          "Fast-charge capable"
+        ],
+        "Product_price": 33999,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-DailyDealProduct-AppleiPhoneXR.png",
+        "detail_URL": "https://www.amazon.in/New-Apple-iPhone-XR-64GB/dp/B08L8D44ZM/ref=sr_1_1_sspa?keywords=iphone&qid=1637579726&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQkRZODBVRklUS09RJmVuY3J5cHRlZElkPUExMDEwMjYxV1RFTzRFVDBFUElOJmVuY3J5cHRlZEFkSWQ9QTA0Nzg4NjkzTzdBWVg4NENLU0pEJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1"
+      },
+      {
+        "id": "2",
+        "Product_title": "Apple iPhone 11 (256GB) - Green",
+        "Product_detail": [
+          "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+          "Water and dust resistant (2 meters for up to 30 minutes, IP68)",
+          "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+          "12MP TrueDepth front camera with Portrait mode, 4K video, and Slo-Mo",
+          "Face ID for secure authentication",
+          "A13 Bionic chip with third-generation Neural Engine",
+          "Fast-charge capable"
+        ],
+        "Product_price": 64900,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-DailyDealProduct-AppleiPhone(green).png",
+        "detail_URL": "https://www.amazon.in/New-Apple-iPhone-11-256GB/dp/B08L8C8Q2K/ref=sr_1_2_sspa?keywords=iphone&qid=1637579726&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQkRZODBVRklUS09RJmVuY3J5cHRlZElkPUExMDEwMjYxV1RFTzRFVDBFUElOJmVuY3J5cHRlZEFkSWQ9QTA0ODgyMzM3QktJWlpOVFo2UEsmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
+      },
+      {
+        "id": "3",
+        "Product_title": "Solimo Nigella Fabric 3 Seater Sofa (Grey & Black)",
+        "Product_detail": [
+          " Comfortable 3 seater sofa made with high quality fabric",
+          "Dimensions:- Length: 185 cm (72.83 in); Width: 76 cm (29.92 in); Height: 76 cm (29.92 in)",
+          "Fabric does not lose colour with rubbing; surpassed 30+ tests to ensure quality",
+          "Durability tested with 100 kg on each seat and backrest for 25,000 cycles",
+          "Meets Indian Standards IS 12674/ IS 5416 and European Safety Requirement Standard EN 12520 for performance and safety",
+          "Safe for family use; free from toxins and harmful chemicals like Azo dye and formaldehyde",
+          "Lightweight with good ground clearance for easy shifting and tidying up"
+        ],
+        "Product_price": 13699,
+        "Product_rating": 4,
+        "Product_image_URL": "./images/ProductCategory-LatestProduct-Fabric3SeaterSofa.png",
+        "detail_URL": "https://www.amazon.in/Amazon-Brand-Solimo-Nigella-Fabric/dp/B08HDPSJPR/ref=sr_1_32?keywords=sofa&qid=1637578596&qsid=262-7338197-9711232&sr=8-32&sres=B079KCDL4T%2CB07R6YW1X1%2CB07TC3PJSR%2CB08THDXSQD%2CB09K7D5WCF%2CB09GP9QYLZ%2CB09L8CYLJJ%2CB091MYTXGT%2CB09KPRBVY8%2CB09LSBQCW5%2CB09L63W2CP%2CB09LS5BPL5%2CB09JGCTPMQ%2CB09KRWXLNF%2CB09M6YTVDM%2CB09M85LSPZ%2CB09M6YWTQY%2CB097PHYFHQ%2CB07THTWXX2%2CB09M6PR8FM&srpt=SOFA&th=1"
+      }
+    ]
+  }
+]
