@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 function Navbar() {
+  let [ActiveBorder, setActiveBorder] = useState();
+  function activeBorder(onFocus) {
+    setActiveBorder(onFocus ? "active" : null);
+  }
   return (
     <>
       <header id="header">
@@ -8,33 +12,34 @@ function Navbar() {
           <div className="logo-wrapper">
             <img src="./images/logo.png" alt="logo" className="brand-logo" />
           </div>
-          <div className="searchbar-wrapper" id="searchbarWrapper">
+          <div className="searchbar-wrapper" id={ActiveBorder}>
             <input
               className="Text-medium"
               id="inputBox"
               type="text"
               placeholder="Search products & brands.."
-              onClick={() => activeBorder()}
+              onFocus={() => activeBorder(true)}
+              onBlur={() => activeBorder(false)}
             />
             <button type="submit">
-              <i class="fal fa-search"></i>
+              <i className="fal fa-search"></i>
             </button>
           </div>
           <div className="nav-menu-wrapper">
             <ul>
               <li>
-                <a href="#" id="user-log" className="Text-medium">
-                  <i class="fal fa-user-alt"></i>Sign Up\Login
+                <a href="#" id="user-log">
+                  <i className="fal fa-user-alt"></i>Sign Up\Login
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="fal fa-shopping-cart"></i>
+                  <i className="fal fa-shopping-cart"></i>
                 </a>
               </li>
               <li>
                 <a href="#" id="burgerMenu-icon">
-                  <i class="far fa-bars"></i>
+                  <i className="far fa-bars"></i>
                 </a>
               </li>
             </ul>
@@ -43,10 +48,6 @@ function Navbar() {
       </header>
     </>
   );
-  function activeBorder() {
-    let element = document.getElementById("searchbarWrapper");
-    element.classList.add("active");
-  }
 }
 
 export default Navbar;

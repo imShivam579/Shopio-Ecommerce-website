@@ -1,0 +1,108 @@
+.footer__section {
+  background: var(--white-100-primaryWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: min(90vw, 90vw);
+  flex-wrap: wrap;
+}
+
+.brandDetail__wrapper {
+  margin-bottom: 2rem;
+  width: 100%;
+  /* background-color: lightcoral; */
+}
+.brandDetail__wrapper .brand-tagline__wrapper {
+  margin: 10px 0;
+  color: var(--grey-500);
+}
+@media screen and (min-width: 678px) {
+  .brandDetail__wrapper {
+    width: fit-content;
+  }
+  .brandDetail__wrapper .brand-tagline__wrapper {
+    max-width: 219px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .brandDetail__wrapper .brand-tagline__wrapper {
+    max-width: 319px;
+  }
+}
+
+.icon__container {
+  display: flex;
+}
+.icon__container .icon__wrapper a {
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  color: var(--grey-600);
+  cursor: pointer;
+  text-decoration: none;
+}
+.icon__container .icon__wrapper a:hover {
+  color: var(--grey-800);
+}
+
+.icon__container .icon__wrapper i {
+  font-size: 1.5rem;
+  color: var(--Primary-blue);
+}
+/* .footer-wrapper .navlinks-container {
+    background-color: lightgreen;
+  } */
+.footer__wrapper .container--title {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--grey-800);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 991px) {
+  .footer__wrapper .container--title {
+    font-size: 16px;
+  }
+  .navlinks__wrapper .Text-small {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 647px) {
+  .footer__wrapper .container--title {
+    font-size: 20px;
+  }
+  .navlinks__wrapper .Text-small {
+    font-size: 16px;
+  }
+}
+.navlinks__container {
+  /* background-color: wheat; */
+  max-width: 130px;
+}
+.navlinks__container .navlinks__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+  /* background-color: yellowgreen; */
+  padding: 0;
+}
+
+.navlinks__container .navlinks__wrapper a {
+  text-decoration: none;
+  color: var(--grey-500);
+  text-transform: capitalize;
+  line-height: 25px;
+  width: fit-content;
+}
+.navlinks__container .navlinks__wrapper a:hover {
+  color: var(--grey-800);
+}

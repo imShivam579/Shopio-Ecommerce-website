@@ -1,15 +1,15 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import ProductHighlight from "./components/ProductHighlight/ProductHighlight";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer/index";
 import ProductCategory from "./components/ProductCategory";
-
 function App() {
   return (
     <>
       <Navbar />
       <ProductHighlight />
       <ProductCategory />
+      <Footer />
     </>
   );
 }

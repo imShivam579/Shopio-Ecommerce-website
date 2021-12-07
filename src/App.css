@@ -8,21 +8,21 @@
   --heading-h3: 30px;
   --text-large: 25px;
   --text-medium: 18px;
-  --text-small: 15px;
+  --text-small: 16px;
   --text-extrasmall: 9px;
   --headingh1-fontweight: 500;
   --headingh2-fontweight: 600;
   --headingh3-fontweight: 600;
   --textLarge-fontweight: 400;
   --textMedium-fontweight: 400;
-  --textSmall-fontweight: 200;
+  --textSmall-fontweight: 400;
   --textExtraSmall-fontweight: 300;
   --headingh1-lineheight: 58px;
   --headingh2-lineheight: 45px;
   --headingh3-lineheight: 35px;
   --textLarge-lineheight: 28px;
   --textMedium-lineheight: 25px;
-  --textSmall-lineheight: 17px;
+  --textSmall-lineheight: 20px;
   --textExtraSmall-lineheight: 10px;
   /* -------------------Color's---------------------- */
   --white-100-primaryWhite: #fff;
@@ -62,7 +62,8 @@
   --Soft-shadow-style1: 0px 10px 12px rgba(112, 144, 176, 0.08);
   --Default-shadow-style2: 0px 6px 10px rgba(112, 144, 176, 0.12);
   --Sharp-shadow-style3: 0px 8px 12px rgba(40, 41, 41, 0.25);
-  --CTA-button-shadow-style4: 0px 12px 16px rgba(29, 40, 97, 0.6);
+  --CTA-buttonLarge-shadow-style4: 0px 12px 16px rgba(29, 40, 97, 0.6);
+  --CTA-buttonSmall-shadow-style5: 0px 8px 12px rgba(29, 40, 97, 0.6);
 }
 * {
   margin: 0;
@@ -132,7 +133,7 @@
     font-weight: var(--textMedium-fontweight);
     line-height: var(--textMedium-lineheight);
   }
-  .Text-medium {
+  /* .Text-medium {
     font-size: var(--text-small);
     font-weight: var(--textSmall-fontweight);
     line-height: var(--textSmall-lineheight);
@@ -141,7 +142,7 @@
     font-size: var(--text-extrasmall);
     font-weight: var(--textExtraSmall-fontweight);
     line-height: var(--textExtraSmall-lineheight);
-  }
+  } */
 }
 
 .wrapper {

@@ -4,14 +4,12 @@
   background-color: var(--white-200);
 }
 #header .header-wrapper {
-  /* background-color: rgb(28, 104, 129); */
   width: min(90vw, 90vw);
   margin: auto;
   display: flex;
   padding: 1rem 0;
   align-items: center;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
 }
 .logo-wrapper {
   width: fit-content;
@@ -45,13 +43,12 @@ button {
   padding: 0.3rem;
   width: 100%;
   background-color: transparent;
-  /* border: 1px solid red; */
 }
+
 #header .searchbar-wrapper input::placeholder {
-  color: var(--grey-300);
+  color: var(--grey-500);
 }
-#header .searchbar-wrapper.active {
-  /* outline: 1px solid var(--grey-500); */
+#header .searchbar-wrapper#active {
   border: 1px solid var(--grey-500);
 }
 #header .searchbar-wrapper button {
@@ -69,7 +66,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* background-color: wheat; */
   width: fit-content;
   margin: 0;
   padding: 0%;
@@ -77,12 +73,13 @@ button {
 #header .nav-menu-wrapper li {
   list-style: none;
   margin: 0.5rem;
-  /* background-color: violet; */
 }
-#header .nav-menu-wrapper a {
+
+#header .nav-menu-wrapper a,
+#header .nav-menu-wrapper li i {
   color: var(--grey-500);
   font-size: var(--text-medium);
-  /* background-color: yellow; */
+  font-weight: var(--textMedium-fontweight);
   text-decoration: none;
 }
 #user-log {

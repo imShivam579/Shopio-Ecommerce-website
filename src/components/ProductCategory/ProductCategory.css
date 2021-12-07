@@ -31,7 +31,8 @@
   }
 }
 @media screen and (max-width: 575px) {
-  .category-wrapper {
+  .category-wrapper,
+  .DailyDeal-container .category-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -44,23 +45,38 @@
   width: min(90vw, 90vw);
   flex-wrap: wrap;
   justify-content: space-between;
-  /* background-color: lightblue; */
-}
-.DailyDeal-container .productCategory-wrapper {
-  width: 70%;
-}
-.DailyDeal-container .category-wrapper {
-  /* display: flex; */
-  width: fit-content;
-  /* background-color: rgb(101, 114, 119); */
-  grid-template-columns: repeat(3, 1fr);
 }
 .DailyDeal-container .category-textWrapper {
-  /* background: lightgreen; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 1.2rem;
+  flex: 1;
+}
+@media screen and (max-width: 991px) {
+  .DailyDeal-wrapper {
+    flex-direction: column;
+  }
+  .DailyDeal-container .category-textWrapper {
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 1.2rem;
+  }
+}
+.DailyDeal-container .productCategory-wrapper {
+  flex: 2;
+}
+.DailyDeal-container .category-wrapper {
+  grid-auto-flow: column;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (min-width: 576px) {
+  .DailyDeal-container .category-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+  }
 }
 .category-timer {
   color: var(--white-200);
@@ -69,6 +85,5 @@
 .DailyDeal-container .category-title {
   color: var(--white-200);
   width: 205px;
-  /* background: lightcoral; */
   margin: 0;
 }

@@ -2,9 +2,9 @@ import React from "react";
 import "./ProductCard.css";
 function index(product) {
   return (
-    <div className="product-card">
+    <div className="product-card" key={product.id}>
       <div className="img-wrapper">
-        <img src={product.Product_image_URL} />
+        <img src={product.Product_image_URL} alt="product.Product_title" />
       </div>
       <div className="card-details">
         <div className="card-text-wrapper">
@@ -14,10 +14,12 @@ function index(product) {
         </div>
         <div className="product-review">
           <div className="product-rating">⭐⭐⭐⭐</div>
-          <div className="product-price">$ {product.Product_price}</div>
+          <div className="product-price Text-medium">
+            $ {product.Product_price}
+          </div>
         </div>
         <button>
-          <i class="fal fa-cart-plus"></i>
+          <i className="fal fa-cart-plus"></i>
         </button>
       </div>
     </div>

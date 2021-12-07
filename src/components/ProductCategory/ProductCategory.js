@@ -3,14 +3,13 @@ import "./ProductCategory.css";
 import ProductCard from "../ProductCard";
 function ProductCategory(category) {
   const { Category_title, Category_product } = category;
-
   return (
     <div className="productCategory-container">
       <div className="productCategory-wrapper">
         <div className="category-title Heading-h3">{Category_title}</div>
         <div className="category-wrapper">
           {Category_product.map((product) => {
-            return <ProductCard {...product} />;
+            return <ProductCard key={product.id} {...product} />;
           })}
         </div>
       </div>
@@ -31,7 +30,7 @@ export function DailyDealsCategory(category) {
           <div className="productCategory-wrapper">
             <div className="category-wrapper">
               {Category_product.map((product) => {
-                return <ProductCard {...product} />;
+                return <ProductCard key={product.id} {...product} />;
               })}
             </div>
           </div>
