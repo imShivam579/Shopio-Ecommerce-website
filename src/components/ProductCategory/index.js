@@ -1,6 +1,6 @@
 import ProductCategory, { DailyDealsCategory } from "./ProductCategory";
 import React, { Component } from "react";
-import product_Category_Data from "./ProductCategoryData.json";
+import product_Category_Data from "../../ProductCategoryData.json";
 export default class index extends Component {
   render() {
     const Products = product_Category_Data.map((response) => response);

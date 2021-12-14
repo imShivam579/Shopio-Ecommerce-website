@@ -16,6 +16,11 @@
   gap: 1.2rem;
   background-color: transparent;
 }
+@media screen and (max-width: 575px) {
+  .category-wrapper {
+    width: min(80vw, 90vw);
+  }
+}
 .category-title {
   margin: 1rem auto;
   color: var(--grey-800);
@@ -45,6 +50,7 @@
   width: min(90vw, 90vw);
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .DailyDeal-container .category-textWrapper {
   display: flex;

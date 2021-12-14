@@ -7,3 +7,16 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.carousel__contianer {
+  margin: 1.8rem 0;
+}
+@media screen and (max-width: 1199px) {
+  .carousel__contianer {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel__contianer {
+    margin: 0.6rem 0;
+  }
+}

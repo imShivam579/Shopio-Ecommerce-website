@@ -269,5 +269,45 @@
         "detail_URL": "https://www.amazon.in/Amazon-Brand-Solimo-Nigella-Fabric/dp/B08HDPSJPR/ref=sr_1_32?keywords=sofa&qid=1637578596&qsid=262-7338197-9711232&sr=8-32&sres=B079KCDL4T%2CB07R6YW1X1%2CB07TC3PJSR%2CB08THDXSQD%2CB09K7D5WCF%2CB09GP9QYLZ%2CB09L8CYLJJ%2CB091MYTXGT%2CB09KPRBVY8%2CB09LSBQCW5%2CB09L63W2CP%2CB09LS5BPL5%2CB09JGCTPMQ%2CB09KRWXLNF%2CB09M6YTVDM%2CB09M85LSPZ%2CB09M6YWTQY%2CB097PHYFHQ%2CB07THTWXX2%2CB09M6PR8FM&srpt=SOFA&th=1"
       }
     ]
+  },
+  {
+    "Category_title": "ProductCarousel__Home_Highlight1",
+    "Category_product": [
+      {
+        "Product_image_Alt": "",
+        "Product_image_URL": "./images/productHighlight-1.png",
+        "Interval_Duration": 1000
+      },
+      {
+        "Product_image_Alt": "",
+        "Product_image_URL": "./images/productHighlight-2.png",
+        "Interval_Duration": 500
+      },
+      {
+        "Product_image_Alt": "",
+        "Product_image_URL": "./images/productHighlight-3.png",
+        "Interval_Duration": 500
+      }
+    ]
+  },
+  {
+    "Category_title": "ProductCarousel__Home_Highlight2",
+    "Category_product": [
+      {
+        "Product_image_Alt": "",
+        "Product_image_URL": "./images/productHighlight-4.png",
+        "Interval_Duration": 1000
+      },
+      {
+        "Product_image_Alt": "",
+        "Product_image_URL": "./images/productHighlight-5.png",
+        "Interval_Duration": 500
+      },
+      {
+        "Product_image_Alt": "",
+        "Product_image_URL": "./images/productHighlight-6.png",
+        "Interval_Duration": 500
+      }
+    ]
   }
 ]
