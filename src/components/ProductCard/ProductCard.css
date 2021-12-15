@@ -24,9 +24,9 @@
 .product-card:hover {
   box-shadow: 0px 15px 20px rgba(51, 72, 94, 0.274);
 }
-.product-card .img-wrapper {
+/* .product-card .img-wrapper {
   background-color: lightsteelblue;
-}
+} */
 .product-card .img-wrapper img {
   width: 100%;
 }

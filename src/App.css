@@ -43,6 +43,7 @@
   --grey-300: #f4f7fe;
   --grey-200: #c9d4ea;
   --grey-100: #eff4fb;
+  --highlight-price-color1: #f35563;
   /* -------------------Gradient---------------------- */
   --GradientOverlay-style1: linear-gradient(
     96.46deg,
@@ -63,7 +64,7 @@
   --Default-shadow-style2: 0px 6px 10px rgba(112, 144, 176, 0.12);
   --Sharp-shadow-style3: 0px 8px 12px rgba(40, 41, 41, 0.25);
   --CTA-buttonLarge-shadow-style4: 0px 12px 16px rgba(29, 40, 97, 0.6);
-  --CTA-buttonSmall-shadow-style5: 0px 8px 12px rgba(29, 40, 97, 0.6);
+  --CTA-buttonSmall-shadow-style5: 0px 8px 12px rgba(58, 63, 87, 0.6);
 }
 * {
   margin: 0;

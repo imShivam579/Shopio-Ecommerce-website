@@ -1,70 +1,163 @@
 .product__detail--container {
   width: 100%;
-  background-color: lightblue;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 1rem 0;
 }
 .product__detail--wrapper {
   width: min(90vw, 90vw);
-  display: flex;
-  background-color: lightcoral;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  background: lightgrey;
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* flex-wrap: wrap; */
 }
 .product__image--wrapper {
   overflow: hidden;
-  background-color: lightseagreen;
   max-width: fit-content;
   padding: 0;
   margin: 0;
+  border-radius: 10px;
+  /* max-width: 500px; */
 }
 .product__image--wrapper img {
   margin: 0;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  object-fit: cover;
+}
+.productDetail__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .productDetail__productTag {
   line-height: 28px;
   text-transform: uppercase;
-  color: var(--grey-300);
+  color: var(--grey-400);
 }
 .productDetail__textWrapper {
-  /* width: min(100%, 732px); */
   width: 100%;
-  background-color: wheat;
-  max-width: 639px;
+  max-width: 539px;
+  padding: 0.5rem 0;
 }
 .textWrapper--title {
   color: var(--grey-800);
+  max-width: 550px;
 }
+.textWrapper--description {
+  line-height: 30px;
+  color: var(--grey-500);
+}
+.productDetail__priceAndReviewWrapper,
 .productDetail__priceWrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 360px;
 }
+
 .priceWrapper--currentPrice {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 45px;
-  color: #f35563;
+  color: var(--highlight-price-color1);
   margin-right: 1.5rem;
 }
 .priceWrapper--originalPrice {
   text-decoration-line: line-through;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 35px;
-  color: var(--black-600);
-  /* color: #6E706F; */
+  color: var(--grey-400);
 }
-.textWrapper--description {
-  line-height: 35px;
-  color: var(--grey-500);
-}
+
 .productDetail__productCountity {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  max-width: 350px;
 }
 .productCountity--counter {
   display: flex;
+  margin-right: 1rem;
+}
+.productCountity--counter button {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: var(--grey-500);
+  padding: 3px 11px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: none;
+}
+.productCountity--counter button:hover {
+  background: var(--grey-400);
+  color: var(--grey-300);
+}
+.productCountity--counter input {
+  border: none;
+  outline: none;
+  width: 3rem;
+  text-align: center;
+  color: var(--grey-500);
+  background: none;
+  font-size: 1.5rem;
+}
+/* Chrome, Safari, Edge, Opera */
+.productCountity--counter input::-webkit-outer-spin-button,
+.productCountity--counter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.productCountity--counter input[type="number"] {
+  -moz-appearance: textfield;
+}
+.productCountity--countityTotal span {
+  color: var(--grey-500);
+}
+.productCountity--countityTotal {
+  font-weight: 500;
+  color: var(--grey-600);
+}
+.productDetail__CTA {
+  margin-top: 2.5rem;
+}
+.CTA__button,
+.CTA__button--secondary:hover {
+  background: var(--grey-900);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--white-100-primaryWhite);
+  text-transform: uppercase;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0px 3px 10px rgba(29, 40, 97, 0.5);
+  border-radius: 50px;
+  border: 1.5px solid transparent;
+  transition: all ease-in-out 150ms;
+  -webkit-transition: all ease-in-out 150ms;
+  -moz-transition: all ease-in-out 150ms;
+  -ms-transition: all ease-in-out 150ms;
+  -o-transition: all ease-in-out 150ms;
+}
+.CTA__button--secondary {
+  border: 1.5px solid var(--grey-800);
+  background: transparent;
+  color: var(--grey-800);
+  box-shadow: none;
+}
+.CTA__button:hover {
+  background: var(--grey-800);
+  box-shadow: var(--CTA-buttonLarge-shadow-style4);
+}
+.CTA__button + .CTA__button {
+  margin-left: 1rem;
 }
