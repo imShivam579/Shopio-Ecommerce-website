@@ -9,7 +9,7 @@
   --text-large: 25px;
   --text-medium: 18px;
   --text-small: 16px;
-  --text-extrasmall: 9px;
+  --text-extrasmall: 13px;
   --headingh1-fontweight: 500;
   --headingh2-fontweight: 600;
   --headingh3-fontweight: 600;
@@ -139,6 +139,7 @@
     font-weight: var(--textSmall-fontweight);
     line-height: var(--textSmall-lineheight);
   }
+
   .Text-small {
     font-size: var(--text-extrasmall);
     font-weight: var(--textExtraSmall-fontweight);

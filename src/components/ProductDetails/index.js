@@ -47,10 +47,10 @@ function index() {
             </div>
           </div>
           <div className="productDetail__CTA ">
-            <button className="CTA__button CTA__button--secondary ">
+            <button className="CTA__button CTA__button--secondary Text-medium ">
               Add to cart
             </button>
-            <button className="CTA__button">Buy Now</button>
+            <button className="CTA__button Text-medium">Buy Now</button>
           </div>
         </div>
       </div>
