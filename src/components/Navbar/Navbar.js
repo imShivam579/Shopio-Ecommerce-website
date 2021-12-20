@@ -28,17 +28,17 @@ function Navbar() {
           <div className="nav-menu-wrapper">
             <ul>
               <li>
-                <a href="#" id="user-log">
+                <a href="#" id="user-log" className="Text-medium">
                   <i className="fal fa-user-alt"></i>Sign Up\Login
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" className="Text-medium">
                   <i className="fal fa-shopping-cart"></i>
                 </a>
               </li>
               <li>
-                <a href="#" id="burgerMenu-icon">
+                <a href="#" id="burgerMenu-icon" className="Text-medium">
                   <i className="far fa-bars"></i>
                 </a>
               </li>

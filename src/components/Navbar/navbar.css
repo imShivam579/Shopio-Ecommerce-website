@@ -89,8 +89,6 @@ button {
 #header .nav-menu-wrapper a,
 #header .nav-menu-wrapper li i {
   color: var(--grey-500);
-  font-size: var(--text-medium);
-  font-weight: var(--textMedium-fontweight);
   text-decoration: none;
 }
 #user-log {

@@ -1,5 +1,5 @@
 .footer__section {
-  background: var(--white-100-primaryWhite);
+  background-color: var(--white-100-primaryWhite);
   display: flex;
   flex-direction: column;
   align-items: center;
