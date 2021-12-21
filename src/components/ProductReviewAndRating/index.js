@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Description, Features, Details } from "./ContentTypeData";
 import "./style.css";
 
 function ProductReviewAndRating() {
@@ -7,15 +8,31 @@ function ProductReviewAndRating() {
   const [threeStarRating, setThreeStarRating] = useState("18%");
   const [fourStarRating, setFourStarRating] = useState("45%");
   const [fiveStarRating, setFiveStarRating] = useState("65%");
+  const [visibleContentType, setVisibleContentType] = useState("Description");
+  function showVisibleContent(ContentType) {
+    switch (ContentType) {
+      case "Description":
+        return Description();
+      case "Features":
+        return Features();
+      case "Details":
+        return Details();
+      default:
+        return ContentType;
+    }
+  }
+
   return (
     <>
       <div className="product__container product__ReviewAndMoreDetail">
         <div className="product__ReviewAndMoreDetail--wrapper product__container--wrapper">
           <div className="product__ReviewAndRating--wrapper">
             <div className="ReviewAndRating__title--wrapper">
-              <span className="ReviewAndRating__title Text-medium">
-                Customer Reviews
-              </span>
+              <ul>
+                <li className="ReviewAndRating__title Text-medium">
+                  Customer Reviews
+                </li>
+              </ul>
             </div>
             <div className="product__Rating--wrapper">
               <div className="Rating__count--wrapper">
@@ -103,36 +120,49 @@ function ProductReviewAndRating() {
             </div>
           </div>
           <div className="product__MoreDetail--wrapper">
-            <div className="ReviewAndRating__title--wrapper">
-              <span className="ReviewAndRating__title Text-medium">
-                Description
-              </span>
-              <span className="ReviewAndRating__title Text-medium">
-                Features
-              </span>
-              <span className="ReviewAndRating__title Text-medium">
-                Details
-              </span>
+            <div className="ReviewAndRating__title--wrapper contentLink">
+              <ul>
+                <li
+                  className="ReviewAndRating__title Text-medium"
+                  onClick={(e) => {
+                    let ReviewAndRatingTitle_width = e.target.clientWidth;
+                    let current_activeLink_width = `${
+                      ReviewAndRatingTitle_width + 20
+                    }px`;
+                    console.log(
+                      "current_activeLink_width",
+                      current_activeLink_width
+                    );
+                    console.log(e.target.classList.add("active"));
+                    console.log(e);
+                    setVisibleContentType(e.target.innerHTML);
+                  }}
+                >
+                  Description
+                </li>
+                <li
+                  className="ReviewAndRating__title Text-medium"
+                  onClick={(e) => {
+                    console.log(e);
+                    setVisibleContentType(e.target.innerHTML);
+                  }}
+                >
+                  Features
+                </li>
+                <li
+                  className="ReviewAndRating__title Text-medium"
+                  onClick={(e) => {
+                    setVisibleContentType(e.target.innerHTML);
+                  }}
+                >
+                  Details
+                </li>
+              </ul>
             </div>
-            <div className="MoreDetail--textWrapper Text-medium">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu et
-                nisi tristique nulla aliquam vitae.
-              </p>
-              <p>
-                Facilisi sem viverra ornare pharetra, metus, volutpat
-                sollicitudin eget. Sed pellentesque aliquam enim nulla sit
-                placerat. Turpis maecenas purus mauris nec velit. Amet vulputate
-                diam vel posuere donec consectetur. Gravida purus placerat
-                consequat sagittis.
-              </p>
-
-              <p>
-                Id at porta cursus dignissim proin sed vulputate gravida quis.
-                Nulla at mattis amet, nisi, ac.Turpis maecenas purus mauris nec
-                velit. Amet vulputate diam vel posuere donec consectetur.
-                Gravida purus placerat consequat sagittis
-              </p>
+            <div className="MoreDetail--textWrapper">
+              <div class="MoreDetail--text Text-medium">
+                {showVisibleContent(visibleContentType)}
+              </div>
             </div>
           </div>
         </div>

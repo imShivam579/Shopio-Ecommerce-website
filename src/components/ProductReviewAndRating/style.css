@@ -11,8 +11,27 @@
   margin: 0;
   margin-bottom: 30px;
   display: flex;
+  position: relative;
   /* background-color: lightblue; */
+}
+.ReviewAndRating__title--wrapper ul {
+  display: flex;
+  width: 100%;
+  /* background-color: lightcoral; */
+  padding: 0;
+  margin: 0;
   justify-content: space-between;
+}
+.ReviewAndRating__title--wrapper.contentLink::after {
+  content: "";
+  height: 2px;
+  width: 119px;
+  position: absolute;
+  left: 45%;
+  bottom: -1px;
+  z-index: 5;
+  margin: 0;
+  background-color: var(--grey-800);
 }
 .product__Rating--wrapper {
   /* background-color: lightblue; */
@@ -40,6 +59,11 @@
 .ReviewAndRating__title {
   color: var(--grey-500);
   letter-spacing: 0.04em;
+  list-style: none;
+  cursor: pointer;
+}
+.ReviewAndRating__title.active {
+  color: var(--grey-800);
 }
 .Rating__countPercentile--wrapper {
   display: flex;
@@ -74,7 +98,11 @@
   height: 100%;
 }
 .MoreDetail--textWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 10px;
+}
+.MoreDetail--text {
   line-height: 30px;
   color: var(--grey-500);
-  padding: 0px 10px 10px;
 }

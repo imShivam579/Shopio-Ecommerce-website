@@ -1,0 +1,43 @@
+// Today Task
+1.Complete productDetail__section ✔
+2.Complete productReview__section
+3.Complete productMoreDetail__section
+4.Complete productRecomdationProduct__section
+
+//Remaning tasks 
+1. State in product detail page 
+- for price tag position
+- for total price
+- for quantity count and addition in total price
+- review count 
+- review star
+- product more detail section 
+- product star rating bar
+
+2. Remaning tasks in product category page 
+- line effect on product name on hover
+- star rating component 
+- routing on card click
+- scroll on small screen
+
+3. Remaning tasks in ProductReview And Rating 
+- content visible on click 
+- line scroll to active content title
+- mobile responsive
+
+4. Remaning tasks in Footer
+- line hover effect on routing links
+- copyright section
+
+5. Remaning tasks in ProductDetail 
+- counter 
+- total amount
+- Render title , amount ,   price(current, old) , star , tag.
+- read more option on small screen. 
+
+6. Remaning tasks in Navbar
+- show search results. 
+- hide placeholder on input click 
+- add ... in placeholder on small screen.
+- make sidebar 
+- route on page on click 
