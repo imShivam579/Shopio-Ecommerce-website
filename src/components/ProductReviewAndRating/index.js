@@ -2,165 +2,147 @@ import React, { useState } from "react";
 import { Description, Features, Details } from "./ContentTypeData";
 import "./style.css";
 
+function showVisibleContent(ContentType) {
+  switch (ContentType) {
+    case "Description":
+      return Description();
+    case "Features":
+      return Features();
+    case "Details":
+      return Details();
+    default:
+      return ContentType;
+  }
+}
+
 function ProductReviewAndRating() {
-  const [oneStarRating, setOneStarRating] = useState("12%");
-  const [twoStarRating, setTwoStarRating] = useState("8%");
-  const [threeStarRating, setThreeStarRating] = useState("18%");
-  const [fourStarRating, setFourStarRating] = useState("45%");
-  const [fiveStarRating, setFiveStarRating] = useState("65%");
+  const [ratingDetail, changeRatingDetail] = useState({
+    RatingPoints: "4.0",
+    RatingRatio: [
+      { title: "5 Star", ratingPercentage: 65 },
+      { title: "4 Star", ratingPercentage: 45 },
+      { title: "3 Star", ratingPercentage: 18 },
+      { title: "2 Star", ratingPercentage: 8 },
+      { title: "1 Star", ratingPercentage: 12 },
+    ],
+  });
   const [visibleContentType, setVisibleContentType] = useState("Description");
-  function showVisibleContent(ContentType) {
-    switch (ContentType) {
-      case "Description":
-        return Description();
-      case "Features":
-        return Features();
-      case "Details":
-        return Details();
-      default:
-        return ContentType;
+  const [activeLinkCurrentWidth, setActiveLinkCurrentWidth] = useState(120);
+  const [activeLinkCurrentPosition, setActiveLinkCurrentPosition] = useState(0);
+  const [detailState, changeDetailState] = useState({
+    activeTitle: "Description",
+    titleObject: [
+      { title: "Description" },
+      { title: "Features" },
+      { title: "Details" },
+    ],
+  });
+  const activateLink = (current_activeLink_width, index, title) => {
+    setActiveLinkCurrentWidth(current_activeLink_width);
+    setVisibleContentType(title);
+    title === "Description"
+      ? setActiveLinkCurrentPosition(0)
+      : title === "Features"
+      ? setActiveLinkCurrentPosition(45)
+      : title === "Details"
+      ? setActiveLinkCurrentPosition(86)
+      : setActiveLinkCurrentPosition(0);
+    toggleActive(index);
+  };
+  function toggleActive(index) {
+    changeDetailState({
+      ...detailState,
+      activeTitle: detailState.titleObject[index].title,
+    });
+  }
+  function toggleActiveStyle(index) {
+    if (detailState.titleObject[index].title === detailState.activeTitle) {
+      return "active";
+    } else {
+      return null;
     }
   }
-
   return (
     <>
       <div className="product__container product__ReviewAndMoreDetail">
         <div className="product__ReviewAndMoreDetail--wrapper product__container--wrapper">
           <div className="product__ReviewAndRating--wrapper">
             <div className="ReviewAndRating__title--wrapper">
-              <ul>
-                <li className="ReviewAndRating__title Text-medium">
-                  Customer Reviews
-                </li>
+              <ul className="Text-medium">
+                <li>Customer Reviews</li>
               </ul>
             </div>
             <div className="product__Rating--wrapper">
               <div className="Rating__count--wrapper">
-                <div className="Rating__count ">4.0</div>
-                <div class="reviewWrapper--starCount">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fal fa-star"></i>
+                <div className="Rating__count ">
+                  {ratingDetail.RatingPoints}
+                </div>
+                <div className="reviewWrapper--starCount">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fal fa-star"></i>
                 </div>
               </div>
               <div className="Rating__countPercentile--wrapper">
-                <div className="countPercentile__wrapper">
-                  <span className="countPercentile__wrapper--text countPercentile--star Text-medium">
-                    5 Star
-                  </span>
-                  <div className="countPercentile__parentBar">
-                    <div
-                      style={{ width: fiveStarRating }}
-                      className="countPercentile__parentBar--progressBar"
-                    ></div>
-                  </div>
-                  <span className="countPercentile__wrapper--text countPercentile--percentage Text-medium">
-                    {fiveStarRating}
-                  </span>
-                </div>
-                <div className="countPercentile__wrapper">
-                  <span className="countPercentile__wrapper--text countPercentile--star Text-medium">
-                    4 Star
-                  </span>
-                  <div className="countPercentile__parentBar">
-                    <div
-                      style={{ width: fourStarRating }}
-                      className="countPercentile__parentBar--progressBar"
-                    ></div>
-                  </div>
-                  <span className="countPercentile__wrapper--text countPercentile--percentage Text-medium">
-                    {fourStarRating}
-                  </span>
-                </div>
-                <div className="countPercentile__wrapper">
-                  <span className="countPercentile__wrapper--text countPercentile--star Text-medium">
-                    3 Star
-                  </span>
-                  <div className="countPercentile__parentBar">
-                    <div
-                      style={{ width: threeStarRating }}
-                      className="countPercentile__parentBar--progressBar"
-                    ></div>
-                  </div>
-                  <span className="countPercentile__wrapper--text countPercentile--percentage Text-medium">
-                    {threeStarRating}
-                  </span>
-                </div>
-                <div className="countPercentile__wrapper">
-                  <span className="countPercentile__wrapper--text countPercentile--star Text-medium">
-                    2 Star
-                  </span>
-                  <div className="countPercentile__parentBar">
-                    <div
-                      style={{ width: twoStarRating }}
-                      className="countPercentile__parentBar--progressBar"
-                    ></div>
-                  </div>
-                  <span className="countPercentile__wrapper--text countPercentile--percentage Text-medium">
-                    {twoStarRating}
-                  </span>
-                </div>
-                <div className="countPercentile__wrapper">
-                  <span className="countPercentile__wrapper--text countPercentile--star Text-medium">
-                    1 Star
-                  </span>
-                  <div className="countPercentile__parentBar">
-                    <div
-                      style={{ width: oneStarRating }}
-                      className="countPercentile__parentBar--progressBar"
-                    ></div>
-                  </div>
-                  <span className="countPercentile__wrapper--text countPercentile--percentage Text-medium">
-                    {oneStarRating}
-                  </span>
-                </div>
+                {ratingDetail.RatingRatio.map((element, index) => {
+                  const title = element.title;
+                  const ratingPercentage = element.ratingPercentage;
+                  return (
+                    <div className="countPercentile__wrapper" key={index}>
+                      <span className="countPercentile__wrapper--text countPercentile--star Text-medium">
+                        {title}
+                      </span>
+                      <div className="countPercentile__parentBar">
+                        <div
+                          style={{ width: ratingPercentage + "%" }}
+                          className="countPercentile__parentBar--progressBar"
+                        ></div>
+                      </div>
+                      <span className="countPercentile__wrapper--text countPercentile--percentage Text-medium">
+                        {ratingPercentage}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
           <div className="product__MoreDetail--wrapper">
-            <div className="ReviewAndRating__title--wrapper contentLink">
-              <ul>
-                <li
-                  className="ReviewAndRating__title Text-medium"
-                  onClick={(e) => {
-                    let ReviewAndRatingTitle_width = e.target.clientWidth;
-                    let current_activeLink_width = `${
-                      ReviewAndRatingTitle_width + 20
-                    }px`;
-                    console.log(
-                      "current_activeLink_width",
-                      current_activeLink_width
-                    );
-                    console.log(e.target.classList.add("active"));
-                    console.log(e);
-                    setVisibleContentType(e.target.innerHTML);
-                  }}
-                >
-                  Description
-                </li>
-                <li
-                  className="ReviewAndRating__title Text-medium"
-                  onClick={(e) => {
-                    console.log(e);
-                    setVisibleContentType(e.target.innerHTML);
-                  }}
-                >
-                  Features
-                </li>
-                <li
-                  className="ReviewAndRating__title Text-medium"
-                  onClick={(e) => {
-                    setVisibleContentType(e.target.innerHTML);
-                  }}
-                >
-                  Details
-                </li>
+            <div className="ReviewAndRating__title--wrapper ">
+              <ul className="Text-medium">
+                {detailState.titleObject.map((element, index) => (
+                  <li
+                    key={index}
+                    onClick={(e) => {
+                      let ReviewAndRatingTitle_width = e.target.clientWidth;
+                      let current_activeLink_width = `${
+                        ReviewAndRatingTitle_width + 20
+                      }`;
+                      activateLink(
+                        current_activeLink_width,
+                        index,
+                        element.title
+                      );
+                    }}
+                    className={toggleActiveStyle(index)}
+                  >
+                    {" "}
+                    {element.title}
+                  </li>
+                ))}
               </ul>
+              <div
+                className="contentLink"
+                style={{
+                  width: activeLinkCurrentWidth + "px",
+                  left: activeLinkCurrentPosition + "%",
+                }}
+              ></div>
             </div>
             <div className="MoreDetail--textWrapper">
-              <div class="MoreDetail--text Text-medium">
+              <div className="MoreDetail--text Text-medium">
                 {showVisibleContent(visibleContentType)}
               </div>
             </div>

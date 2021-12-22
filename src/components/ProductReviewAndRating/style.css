@@ -2,6 +2,11 @@
 .product__ReviewAndMoreDetail {
   background-color: var(--white-100-primaryWhite);
 }
+@media screen and (max-width: 799px) {
+  .product__ReviewAndMoreDetail--wrapper {
+    gap: 1rem;
+  }
+}
 .product__ReviewAndRating--wrapper {
   grid-area: col1;
 }
@@ -12,7 +17,8 @@
   margin-bottom: 30px;
   display: flex;
   position: relative;
-  /* background-color: lightblue; */
+  /*background-color: lightblue;
+  */
 }
 .ReviewAndRating__title--wrapper ul {
   display: flex;
@@ -22,26 +28,34 @@
   margin: 0;
   justify-content: space-between;
 }
-.ReviewAndRating__title--wrapper.contentLink::after {
-  content: "";
+.ReviewAndRating__title--wrapper .contentLink {
   height: 2px;
-  width: 119px;
+  width: 129px;
   position: absolute;
   left: 45%;
   bottom: -1px;
   z-index: 5;
   margin: 0;
   background-color: var(--grey-800);
+  transition: all ease 300ms;
+  -webkit-transition: all ease 300ms;
+  -moz-transition: all ease 300ms;
+  -ms-transition: all ease 300ms;
+  -o-transition: all ease 300ms;
 }
 .product__Rating--wrapper {
   /* background-color: lightblue; */
   padding: 0;
   padding-left: 30px;
 }
+@media screen and (max-width: 991px) {
+  .product__Rating--wrapper {
+    padding-left: 15px;
+  }
+}
 .Rating__count--wrapper {
   display: flex;
   align-items: flex-end;
-  /* background-color: lightblue; */
   padding: 0px;
   margin: 0;
   margin-bottom: 30px;
@@ -56,13 +70,18 @@
 .product__MoreDetail--wrapper {
   grid-area: col2;
 }
-.ReviewAndRating__title {
+.ReviewAndRating__title--wrapper ul li {
   color: var(--grey-500);
   letter-spacing: 0.04em;
   list-style: none;
   cursor: pointer;
+  transition: color ease 400ms;
+  -webkit-transition: color ease 400ms;
+  -moz-transition: color ease 400ms;
+  -ms-transition: color ease 400ms;
+  -o-transition: color ease 400ms;
 }
-.ReviewAndRating__title.active {
+.ReviewAndRating__title--wrapper ul li.active {
   color: var(--grey-800);
 }
 .Rating__countPercentile--wrapper {
@@ -92,6 +111,12 @@
   margin: 0px 15px;
   overflow: hidden;
 }
+@media screen and (max-width: 991px) {
+  .countPercentile__parentBar {
+    width: 200px;
+    margin: 0px 15px;
+  }
+}
 .countPercentile__parentBar--progressBar {
   background-color: var(--gloy-star-yellow);
   width: 65%;
@@ -101,8 +126,15 @@
   display: flex;
   justify-content: center;
   padding: 0px 10px 10px;
+  overflow-x: hidden;
 }
 .MoreDetail--text {
+  width: 100%;
   line-height: 30px;
   color: var(--grey-500);
+}
+@media screen and (max-width: 991px) {
+  .MoreDetail--text p {
+    margin-bottom: 8px;
+  }
 }

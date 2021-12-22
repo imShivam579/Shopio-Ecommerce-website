@@ -6,10 +6,10 @@ function index() {
       <div className="product__container">
         <div className="product__detail--wrapper product__container--wrapper">
           <div className="product__image--wrapper">
-            <img src="./images/product-img.png" alt="Product-image" srcset="" />
+            <img src="./images/product-img.png" alt="Product-image" srcSet="" />
           </div>
           <div className="productDetail__wrapper">
-            <div class="productDetail__section">
+            <div className="productDetail__section">
               <div className="productDetail__textWrapper">
                 <div
                   className="productDetail__productTag Text-medium"
@@ -32,12 +32,12 @@ function index() {
                   </div>
                 </div>
                 <div className="productDetail__reviewAndStarWrapper">
-                  <div class="reviewWrapper--starCount">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fal fa-star"></i>
+                  <div className="reviewWrapper--starCount">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fal fa-star"></i>
                   </div>
                   <span className="Text-medium reviewWrapper--reviewCount">
                     123 Review
@@ -45,7 +45,7 @@ function index() {
                 </div>
               </div>
             </div>
-            <div class="productDetail__section">
+            <div className="productDetail__section">
               <div className="productDetail__textWrapper">
                 <div className="textWrapper--description Text-medium ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
@@ -57,15 +57,15 @@ function index() {
                 </div>
               </div>
             </div>
-            <div class="productDetail__section">
+            <div className="productDetail__section">
               <div className="productDetail__productCountity">
-                <div class="productCountity--wrapper">
-                  <div class="productCountity--wrapperTitle Text-large">
+                <div className="productCountity--wrapper">
+                  <div className="productCountity--wrapperTitle Text-large">
                     Quantity
                   </div>
                   <div className="productCountity--counter">
                     <button className="productCountity--border ">
-                      <i class="far fa-plus"></i>
+                      <i className="far fa-plus"></i>
                     </button>
                     <input
                       className="productCountity--border Text-medium"
@@ -75,12 +75,12 @@ function index() {
                       defaultValue={1}
                     />
                     <button className="productCountity--border">
-                      <i class="far fa-minus"></i>
+                      <i className="far fa-minus"></i>
                     </button>
                   </div>
                 </div>
-                <div class="productCountity--wrapper">
-                  <div class="productCountity--wrapperTitle Text-large">
+                <div className="productCountity--wrapper">
+                  <div className="productCountity--wrapperTitle Text-large">
                     Total
                   </div>
                   <div className="productCountity--countityTotal productCountity--border Text-medium">
@@ -89,7 +89,7 @@ function index() {
                 </div>
               </div>
             </div>
-            <div class="productDetail__section">
+            <div className="productDetail__section">
               <div className="productDetail__CTA ">
                 <button className="CTA__button CTA__button--secondary Text-medium ">
                   Add to cart
