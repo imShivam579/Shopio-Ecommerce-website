@@ -36,19 +36,19 @@ function index() {
           <div className="navlinks__container">
             <div className="container--title Text-medium">Policy info</div>
             <div className="navlinks__wrapper">
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 privacy policy
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 terms of sale
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 terms of use
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 report abuse & takedown policy
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 cSR policy
               </a>
             </div>
@@ -59,16 +59,16 @@ function index() {
               <a href="#" className="Text-small">
                 about us
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 blog
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 sitemap
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 fAQ
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 contact us
               </a>
             </div>
@@ -76,19 +76,19 @@ function index() {
           <div className="navlinks__container">
             <div className="container--title Text-medium">business</div>
             <div className="navlinks__wrapper">
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 sell on shopio
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 advertise on shopio
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 media enquiries
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 be an affiliate
               </a>
-              <a href="#" className="Text-small">
+              <a href="#" className="Text-small hover-line">
                 deal of the day
               </a>
             </div>

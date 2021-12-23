@@ -21,12 +21,12 @@
 - scroll on small screen
 
 3. Remaning tasks in ProductReview And Rating 
-- content visible on click 
-- line scroll to active content title
-- mobile responsive
+- content visible on click  ✔
+- line scroll to active content title ✔
+- mobile responsive ✔
 
 4. Remaning tasks in Footer
-- line hover effect on routing links
+- line hover effect on routing links ✔
 - copyright section
 
 5. Remaning tasks in ProductDetail 

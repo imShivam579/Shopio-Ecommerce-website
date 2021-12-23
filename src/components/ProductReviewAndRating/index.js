@@ -26,6 +26,8 @@ function ProductReviewAndRating() {
       { title: "1 Star", ratingPercentage: 12 },
     ],
   });
+  const [activeBarPosition, changeActiveBarPosition] = useState("left");
+  const [expandContent, setExpandContent] = useState(false);
   const [visibleContentType, setVisibleContentType] = useState("Description");
   const [activeLinkCurrentWidth, setActiveLinkCurrentWidth] = useState(120);
   const [activeLinkCurrentPosition, setActiveLinkCurrentPosition] = useState(0);
@@ -36,6 +38,9 @@ function ProductReviewAndRating() {
       { title: "Features" },
       { title: "Details" },
     ],
+    activeLinkCurrentPosition: 0,
+    activeLinkCurrentWidth: 120,
+    visibleDetailOf: "Description",
   });
   const activateLink = (current_activeLink_width, index, title) => {
     setActiveLinkCurrentWidth(current_activeLink_width);
@@ -60,6 +65,13 @@ function ProductReviewAndRating() {
       return "active";
     } else {
       return null;
+    }
+  }
+  function toggleContentView() {
+    if (expandContent) {
+      return "MoreDetail--text Text-medium expand-content";
+    } else {
+      return "MoreDetail--text Text-medium ";
     }
   }
   return (
@@ -128,11 +140,11 @@ function ProductReviewAndRating() {
                     }}
                     className={toggleActiveStyle(index)}
                   >
-                    {" "}
                     {element.title}
                   </li>
                 ))}
               </ul>
+
               <div
                 className="contentLink"
                 style={{
@@ -142,9 +154,17 @@ function ProductReviewAndRating() {
               ></div>
             </div>
             <div className="MoreDetail--textWrapper">
-              <div className="MoreDetail--text Text-medium">
+              <div className={toggleContentView()}>
                 {showVisibleContent(visibleContentType)}
               </div>
+              <span
+                className="expandContent-btn Text-medium"
+                onClick={() => {
+                  setExpandContent(!expandContent);
+                }}
+              >
+                {expandContent ? "show less." : "read more..."}
+              </span>
             </div>
           </div>
         </div>

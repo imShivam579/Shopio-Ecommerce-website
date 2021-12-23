@@ -70,7 +70,6 @@
   overflow: hidden;
   display: block;
   -webkit-line-clamp: 5;
-  display: block;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
@@ -134,6 +133,14 @@
   align-items: center;
   justify-content: space-between;
   margin: 0.5rem 0;
+}
+@media screen and (max-width: 386px) {
+  .productDetail__productCountity {
+    flex-wrap: wrap;
+  }
+  .productCountity--wrapper {
+    margin-bottom: 20px;
+  }
 }
 .productCountity--wrapper {
   display: flex;
