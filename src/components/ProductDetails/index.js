@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-function index() {
+
+function ProductDetail() {
+  const [productDetails, changeProductDetails] = useState({
+    productTitle: "title",
+    productDescription: "Description",
+    productOriginalPrice: 119,
+    productDiscountPrice: 20,
+    productCurrentPrice: 99,
+    productCount: 1,
+    productGrandTotal: 99,
+  });
+  const [expandContent, setExpandContent] = useState(false);
+  function toggleContentView() {
+    if (expandContent) {
+      return "textWrapper--description Text-medium  expand-content";
+    } else {
+      return "textWrapper--description Text-medium  ";
+    }
+  }
+
   return (
     <>
       <div className="product__container">
@@ -25,10 +44,10 @@ function index() {
               <div className="productDetail__priceAndReviewWrapper">
                 <div className="productDetail__priceWrapper">
                   <div className="priceWrapper--originalPrice Text-medium">
-                    $180
+                    ${productDetails.productOriginalPrice}
                   </div>
                   <div className="priceWrapper--currentPrice Heading-h3">
-                    $110
+                    ${productDetails.productCurrentPrice}
                   </div>
                 </div>
                 <div className="productDetail__reviewAndStarWrapper">
@@ -47,7 +66,7 @@ function index() {
             </div>
             <div className="productDetail__section">
               <div className="productDetail__textWrapper">
-                <div className="textWrapper--description Text-medium ">
+                <div className={toggleContentView()}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
                   nulla risus pellentesque tempor vel cras. Venenatis et diam
                   vitae semper faucibus sit eleifend fringilla. Sed pellentesque
@@ -55,6 +74,14 @@ function index() {
                   nec velit. Amet vulputate diam vel posuere donec consectetur.
                   Gravida purus placerat consequat sagittis.
                 </div>
+                <span
+                  className="expandContent-btn Text-medium"
+                  onClick={() => {
+                    setExpandContent(!expandContent);
+                  }}
+                >
+                  {expandContent ? "show less." : "read more..."}
+                </span>
               </div>
             </div>
             <div className="productDetail__section">
@@ -65,17 +92,45 @@ function index() {
                   </div>
                   <div className="productCountity--counter">
                     <button className="productCountity--border ">
-                      <i className="far fa-plus"></i>
+                      <i
+                        className="far fa-plus"
+                        onClick={() => {
+                          productDetails.productCount < 100
+                            ? changeProductDetails({
+                                ...productDetails,
+                                productCount: productDetails.productCount + 1,
+                              })
+                            : console.log("greater then 99");
+                        }}
+                      ></i>
                     </button>
                     <input
                       className="productCountity--border Text-medium"
                       type="number"
-                      name=""
-                      id=""
-                      defaultValue={1}
+                      value={productDetails.productCount}
+                      onChange={(e) => {
+                        e.target.value > 99
+                          ? console.log("greater then 99")
+                          : e.target.value < 1
+                          ? console.log("smaller then one")
+                          : changeProductDetails({
+                              ...productDetails,
+                              productCount: parseInt(e.target.value),
+                            });
+                      }}
                     />
                     <button className="productCountity--border">
-                      <i className="far fa-minus"></i>
+                      <i
+                        className="far fa-minus"
+                        onClick={() => {
+                          productDetails.productCount <= 1
+                            ? console.log("smaller then 1")
+                            : changeProductDetails({
+                                ...productDetails,
+                                productCount: productDetails.productCount - 1,
+                              });
+                        }}
+                      ></i>
                     </button>
                   </div>
                 </div>
@@ -84,7 +139,15 @@ function index() {
                     Total
                   </div>
                   <div className="productCountity--countityTotal productCountity--border Text-medium">
-                    $110
+                    $
+                    {productDetails.productCount === 0 ||
+                    productDetails.productCount === null ||
+                    productDetails.productCount === undefined ||
+                    productDetails.productCount === NaN
+                      ? (productDetails.productGrandTotal = 0)
+                      : (productDetails.productGrandTotal =
+                          productDetails.productCurrentPrice *
+                          productDetails.productCount)}
                   </div>
                 </div>
               </div>
@@ -104,4 +167,4 @@ function index() {
   );
 }
 
-export default index;
+export default ProductDetail;

@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Meddon:wght@100;300;400;500;700;900&display=swap");
 
 :root {
   /* -------------------Typography---------------------- */
   --font-style1-primaryfont: Roboto;
+  --font-style2-cursivefont: Meddon;
   --heading-h1: 50px;
   --heading-h2: 40px;
   --heading-h3: 30px;
@@ -13,7 +14,7 @@
   --headingh1-fontweight: 500;
   --headingh2-fontweight: 600;
   --headingh3-fontweight: 600;
-  --textLarge-fontweight: 400;
+  --textLarge-fontweight: 600;
   --textMedium-fontweight: 400;
   --textSmall-fontweight: 400;
   --textExtraSmall-fontweight: 300;
@@ -23,7 +24,7 @@
   --textLarge-lineheight: 28px;
   --textMedium-lineheight: 25px;
   --textSmall-lineheight: 20px;
-  --textExtraSmall-lineheight: 10px;
+  --textExtraSmall-lineheight: 20px;
   /* -------------------Color's---------------------- */
   --white-100-primaryWhite: #fefeff;
   --white-200: #f6f7fb;
@@ -129,7 +130,7 @@
     line-height: var(--textLarge-lineheight);
   }
   .Text-large {
-    --textMedium-fontweight: 400;
+    --textMedium-fontweight: 500;
     font-size: var(--text-medium);
     font-weight: var(--textMedium-fontweight);
     line-height: var(--textMedium-lineheight);

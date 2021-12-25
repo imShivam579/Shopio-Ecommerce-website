@@ -45,8 +45,8 @@
 button {
   cursor: pointer;
 }
-#header .searchbar-wrapper input,
-#header .searchbar-wrapper button {
+.searchbar-wrapper input,
+.searchbar-wrapper button {
   --textMedium-fontweight: 300;
   color: var(--grey-500);
   border: none;
@@ -56,40 +56,45 @@ button {
   background-color: transparent;
 }
 
-#header .searchbar-wrapper input::placeholder {
+.searchbar-wrapper input::placeholder {
   color: var(--grey-500);
 }
-#header .searchbar-wrapper#active {
+.searchbar-wrapper#active {
   border: 1px solid var(--grey-500);
 }
-#header .searchbar-wrapper button {
+.searchbar-wrapper button {
   max-width: fit-content;
   padding: 0.3rem 0.8rem;
 }
-#header .nav-menu-wrapper {
-  width: fit-content;
+.nav-menu-wrapper {
+  width: 100%;
+  max-width: 260px;
 }
-#header .searchbar-wrapper button:hover,
-#header .nav-menu-wrapper a:hover {
+.searchbar-wrapper button:hover,
+.nav-menu-wrapper a:hover {
   color: var(--grey-600);
 }
-#header .nav-menu-wrapper ul {
+.nav-menu-wrapper ul {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: fit-content;
+  justify-content: space-between;
   margin: 0;
   padding: 0%;
 }
-#header .nav-menu-wrapper li {
+.nav-menu-wrapper li {
   list-style: none;
   margin: 0.5rem;
 }
-
-#header .nav-menu-wrapper a,
-#header .nav-menu-wrapper li i {
+.nav-menu-wrapper ul i {
+  font-size: 1.3rem;
+}
+.nav-menu-wrapper a,
+.nav-menu-wrapper li {
   color: var(--grey-500);
   text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
 }
 #user-log {
   display: none;

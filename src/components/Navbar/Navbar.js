@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
-function Navbar() {
+
+function Navbar({ toggle }) {
   let [ActiveBorder, setActiveBorder] = useState();
   function activeBorder(onFocus) {
     setActiveBorder(onFocus ? "active" : null);
@@ -37,10 +38,8 @@ function Navbar() {
                   <i className="fal fa-shopping-cart"></i>
                 </a>
               </li>
-              <li>
-                <a href="#" id="burgerMenu-icon" className="Text-medium">
-                  <i className="far fa-bars"></i>
-                </a>
+              <li id="burgerMenu-icon" className="Text-medium" onClick={toggle}>
+                <i className="fad fa-bars"></i>
               </li>
             </ul>
           </div>
