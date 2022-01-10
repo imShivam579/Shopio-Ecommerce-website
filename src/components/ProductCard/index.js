@@ -1,16 +1,21 @@
 import React from "react";
 import "./ProductCard.css";
+import { NavLink } from "react-router-dom";
 function index(product) {
+  console.log(product);
   return (
     <div className="product-card" key={product.id}>
       <div className="img-wrapper">
-        <img src={product.Product_image_URL} alt="product.Product_title" />
+        <img src={product.Product_image_URL} alt="product-image" />
       </div>
       <div className="card-details">
         <div className="card-text-wrapper">
-          <a className="product-title Text-medium hover-Textline" href="#">
+          <NavLink
+            to={`/product`}
+            className="product-title Text-medium hover-Textline"
+          >
             {product.Product_title}
-          </a>
+          </NavLink>
         </div>
         <div className="product-review">
           <div className="product-rating">

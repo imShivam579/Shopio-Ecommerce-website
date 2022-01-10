@@ -10,7 +10,6 @@ function ProductHighlight(Highlights) {
           const Img_Alt = product.Product_image_Alt;
           const Img_Url = product.Product_image_URL;
           const Img_Duration = product.Interval_Duration;
-          console.log(Img_Url);
           return (
             <Carousel.Item interval={Img_Duration} className="carousel__item">
               <img className="d-block w-100" src={Img_Url} alt={Img_Alt} />

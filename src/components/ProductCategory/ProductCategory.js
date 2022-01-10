@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductCategory.css";
 import ProductCard from "../ProductCard";
+import { NavLink } from "react-router-dom";
 function ProductCategory(category) {
   const { Category_title, Category_product } = category;
   return (
@@ -30,7 +31,11 @@ export function DailyDealsCategory(category) {
           <div className="productCategory-wrapper">
             <div className="category-wrapper">
               {Category_product.map((product) => {
-                return <ProductCard key={product.id} {...product} />;
+                return (
+                  <NavLink to="/product">
+                    <ProductCard key={product.id} {...product} />
+                  </NavLink>
+                );
               })}
             </div>
           </div>

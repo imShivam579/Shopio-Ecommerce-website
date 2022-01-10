@@ -5,6 +5,7 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  position: relative;
 }
 .product-card .image-wrapper {
   background: linear-gradient(96.46deg, #a0a0a0 4.51%, #cacaca 97.67%);

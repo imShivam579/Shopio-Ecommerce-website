@@ -26,7 +26,6 @@ function ProductReviewAndRating() {
       { title: "1 Star", ratingPercentage: 12 },
     ],
   });
-  const [activeBarPosition, changeActiveBarPosition] = useState("left");
   const [expandContent, setExpandContent] = useState(false);
   const [visibleContentType, setVisibleContentType] = useState("Description");
   const [activeLinkCurrentWidth, setActiveLinkCurrentWidth] = useState(120);

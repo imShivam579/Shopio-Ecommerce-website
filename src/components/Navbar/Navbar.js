@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-
+import { NavLink } from "react-router-dom";
 function Navbar({ toggle }) {
   let [ActiveBorder, setActiveBorder] = useState();
   function activeBorder(onFocus) {
@@ -11,7 +11,9 @@ function Navbar({ toggle }) {
       <header id="header">
         <div className="header-wrapper">
           <div className="logo-wrapper">
-            <img src="./images/logo.png" alt="logo" className="brand-logo" />
+            <NavLink to="/">
+              <img src="./images/logo.png" alt="logo" className="brand-logo" />
+            </NavLink>
           </div>
           <div className="searchbar-wrapper" id={ActiveBorder}>
             <input
@@ -34,9 +36,9 @@ function Navbar({ toggle }) {
                 </a>
               </li>
               <li>
-                <a href="#" className="Text-medium">
+                <NavLink to="/product" className="Text-medium">
                   <i className="fal fa-shopping-cart"></i>
-                </a>
+                </NavLink>
               </li>
               <li id="burgerMenu-icon" className="Text-medium" onClick={toggle}>
                 <i className="fad fa-bars"></i>
